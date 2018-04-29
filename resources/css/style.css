@@ -1,0 +1,218 @@
+/* Universal Styles */
+html {
+  font-family: "Hind", sans-serif;
+  font-weight: 300;
+  color: #2B2E30;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+section {
+  padding: 32px 0;
+}
+
+p {
+  line-height: 1.4;
+  margin-bottom: .5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #131619;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.bg-gray {
+  background-color: #E7E7E8;
+}
+
+.btn {
+  background-color: #transparent;
+  color: #FFD30F;
+  padding: 8px;
+  border: 1px solid #FFD30F;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 500;
+  width: 40%;
+}
+
+.btn:hover {
+  background-color: #FFD30F;
+  color: #131619;
+  transition: all 200ms linear;
+}
+
+.btn:active {
+  opacity: .8;
+  position: relative;
+  top: 1px;
+  transition: all 200ms linear;
+}
+
+/* Header */
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 64px;
+  border-bottom: 1px solid #B8B9BA;
+  padding: 0 24px;
+}
+
+ul span {
+  margin-left: 16px;
+  padding: 18px 0;
+  font-size: 0.85rem;
+}
+
+ul span:hover {
+  border-bottom: 3px solid #FFD30F;
+}
+
+.logo {
+  height: 32px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #131619;
+}
+
+.logo p {
+  margin-bottom: 0;
+}
+
+.logo span {
+  font-weight: 400;
+  color: #A1A2A3;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 599px) {
+  .logo{
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+
+/* Hero */
+
+.hero {
+  background-image:linear-gradient(45deg,rgba(19, 22, 25, .8) 0,rgba(19, 22, 25, .2) 100%), url("../img/banner.jpg");
+  background-size: cover;
+  height: 300px;
+  background-position: center center;
+  align-items: center;
+}
+
+.banner-text {
+  width: 40%;
+  color: white;
+  margin-left: 72px;
+}
+
+/* Campus Info */
+
+
+/* Courses Section */
+
+.courses {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 64px;
+}
+
+.course {
+  margin: 8px auto;
+  width: 100%;
+  background-color: white;
+  border-radius: 1px;
+  box-shadow: 0px 1px 5px rgba(19, 22, 25, .25);
+}
+
+.course {
+  margin: 32px 8px;
+  width: 30%;
+  background-color: white;
+  border-radius: 1px;
+  box-shadow: 0px 1px 5px rgba(19, 22, 25, .25);
+}
+
+
+.course:hover {
+  box-shadow: 0px 2px 15px rgba(19, 22, 25, .35);
+  transition: box-shadow 200ms;
+  cursor: pointer;
+}
+
+.course img {
+  max-width: 100%;
+  height: auto;
+}
+
+.copy {
+  padding: 16px;
+}
+
+.course p {
+  color: #A1A2A3;
+}
+
+/* Thesis Section */
+
+
+/* Footer */
