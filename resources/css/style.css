@@ -1,11 +1,10 @@
 /* Universal Styles */
 html {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
   font-weight: 300;
   color: #22222;
   background-color: #F3F3F3;
-  margin-bottom: .5em;
+  margin-bottom: .5rem;
 }
 
 body {
@@ -24,7 +23,7 @@ body {
 
 /* Typography */
 h3, h4, p {
-  margin-bottom: .5em;
+  margin-bottom: .5rem;
 }
 
 h1, h2 {
@@ -32,7 +31,7 @@ h1, h2 {
   font-weight: 900;
   font-style: italic;
   line-height: 1.25;
-  margin-bottom: .25em;
+  margin-bottom: .25rem;
 }
 
 h3, b {
@@ -40,18 +39,17 @@ h3, b {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2rem;
   text-align: center;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
-
 
 a {
   text-decoration: none;
@@ -69,10 +67,6 @@ b {
 
 
 /* Margin Fix */
-
-.btm-0 {
-  margin-bottom: 0px;
-}
 
 .btm-32 {
   margin-bottom: 32px;
@@ -111,34 +105,6 @@ b {
   box-shadow: 0px 1px 10px rgba(19, 22, 25, .4);
   transition: all 200ms;
   cursor: pointer;
-}
-
-
-/* Link underline transition */
-
-.underline {
-  display: inline;
-  position: relative;
-  overflow: hidden;
-}
-.underline:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  width: 0;
-  bottom: -1px;
-  background: #ae0001;
-  height: 2px;
-  transition-property: width;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-
-.underline:hover:after,
-.underline:focus:after,
-.underline:active:after {
-  width: 100%;
 }
 
 
@@ -341,7 +307,7 @@ ul span:hover {
 }
 
 .item img {
-  width: 35%;
+  width: 40%;
   border-radius: 4px 0 0 4px;
 }
 
@@ -350,12 +316,8 @@ ul span:hover {
 }
 
 .item .copy {
-  width: 65%;
+  width: 60%;
   padding: 8px 16px;
-}
-
-.item p {
-  font-size: .8em;
 }
 
 
@@ -579,11 +541,29 @@ footer a {
   margin-left: 12px;
 }
 
-
-footer .underline:after {
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 0;
   bottom: -2px;
   background: #2B2E30;
   height: 3px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  width: 100%;
 }
 
 
